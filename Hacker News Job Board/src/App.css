@@ -1,0 +1,39 @@
+/* app.css */
+.job-board {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.job-title a {
+  text-decoration: none;
+  color: #0074d9;
+}
+
+.job-title a:hover {
+  text-decoration: underline;
+}
+
+.job-listing {
+  margin-bottom: 20px;
+}
+
+.loading-indicator {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.load-more-button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: #0056a6;
+}

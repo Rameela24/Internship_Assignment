@@ -1,0 +1,114 @@
+/* src/styles/JobBoard.css */
+body {
+  background-color: #f6f6ef; /* Set overall background color to #F6F6EF */
+  margin: 0; /* Remove default body margin */
+  font-family: Arial, sans-serif; /* Choose an appropriate font */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.title {
+  color: orange;
+}
+
+.job-board {
+  width: 100%; /* Full width on smaller screens */
+  margin: 0;
+  padding: 10px;
+  background-color: #fff; /* Set container background color to white */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Ensure padding doesn't add to the width */
+}
+
+h1 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff; /* Background color to make it stand out */
+  padding: 10px;
+  font-size: 1.8rem; /* Adjust font size as needed */
+  color: #333;
+  margin: 20px 0;
+  text-align: center; /* Center align the title */
+}
+
+.job-listings {
+  margin-top: 20px;
+}
+
+.job-title a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem; /* Adjust font size as needed */
+}
+
+.job-title a:hover {
+  text-decoration: underline;
+}
+
+.job-listing {
+  background-color: #fff; /* Set individual job listing background color to white */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Add a border to create a box effect */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.loading-indicator {
+  font-size: 1rem; /* Adjust font size as needed */
+  color: #777;
+  text-align: center;
+}
+
+.load-more-button {
+  display: block;
+  background-color: orange; /* Set background color to orange */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px; /* Adjust padding as needed */
+  font-size: 1.1rem; /* Adjust font size as needed */
+  cursor: pointer;
+  margin: 20px auto; /* Center the button */
+}
+
+.load-more-button:hover {
+  background-color: #f6f6ef; /* Set hover background color to the overall background color */
+  color: orange; /* Set hover text color to orange */
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .job-board {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .job-listings {
+    margin-top: 20px;
+  }
+
+  .job-title a {
+    font-size: 1.2rem;
+  }
+
+  .job-listing {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .loading-indicator {
+    font-size: 1.2rem;
+  }
+
+  .load-more-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
+}
